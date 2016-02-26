@@ -1,5 +1,8 @@
 import java.io.*;
 
+/**
+ * https://open.kattis.com/problems/toilet
+ */
 public class Toilet {
 
     public static void main(String[] args) throws IOException {
