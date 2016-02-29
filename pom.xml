@@ -7,6 +7,8 @@
     <groupId>maxim-kornienko</groupId>
     <artifactId>kattis</artifactId>
     <version>0.42</version>
+    <packaging>jar</packaging>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -15,6 +17,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <packaging>jar</packaging>
-
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
