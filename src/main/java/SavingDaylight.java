@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
 public class SavingDaylight {
 
     public static void main(String[] args) throws IOException {
-        // June 22 2005 6:24 20:37
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 1024 * 1024);
 
         Pattern pattern = Pattern.compile("^(?<date>\\w+ \\w+ \\w+) (?<sunriseH>\\d+)[\\:](?<sunriseM>\\d+) (?<sunsetH>\\d+)[\\:](?<sunsetM>\\d+)");
