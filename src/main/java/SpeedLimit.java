@@ -21,7 +21,7 @@ public class SpeedLimit {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         int logsCount = Integer.parseInt(in.readLine());
         while (logsCount != -1) {

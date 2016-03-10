@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class Vauvau {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String[] dogsLine = in.readLine().split(" ");
         Dog d1 = new Dog(Integer.parseInt(dogsLine[0]), Integer.parseInt(dogsLine[1]));
         Dog d2 = new Dog(Integer.parseInt(dogsLine[2]), Integer.parseInt(dogsLine[3]));

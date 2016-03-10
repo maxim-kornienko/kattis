@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class Parking {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int testCasesCount = Integer.parseInt(in.readLine());
         for (int t = 0; t < testCasesCount; t++) {
             System.out.println(nextTestCase(in));

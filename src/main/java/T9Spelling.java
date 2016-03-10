@@ -41,7 +41,7 @@ public class T9Spelling {
     }
     
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int testCasesCount = Integer.parseInt(in.readLine());
         for (int t = 0; t < testCasesCount; t++) {
             System.out.println(String.format("Case #%d: %s", t + 1, translate(in.readLine())));

@@ -12,7 +12,7 @@ public class WhatDoesTheFoxSay {
     }
 
     public static void main(InputStream input, PrintStream output) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(input), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(input));
         Integer testCasesCount = Integer.valueOf(in.readLine());
         for (int t = 0; t < testCasesCount; t++) {
             String record = in.readLine();

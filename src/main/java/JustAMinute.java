@@ -10,7 +10,7 @@ public class JustAMinute {
     static final double ERROR = Math.pow(10, -7);
 
     public static void main(String[] args) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         int observationsCount = Integer.parseInt(in.readLine());
         int minutes = 0;
         int seconds = 0;

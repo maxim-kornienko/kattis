@@ -10,7 +10,7 @@ public class Toilet {
     }
 
     public static void main(InputStream input, PrintStream output) throws IOException {
-        BufferedReader in = new BufferedReader(new InputStreamReader(input), 8092);
+        BufferedReader in = new BufferedReader(new InputStreamReader(input));
         String data = in.readLine();
 
         int userPreferencesPolicy = data.charAt(0) == data.charAt(1) ? 0 : 1; // should first user adjust on entering?
