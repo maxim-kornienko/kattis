@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * https://open.kattis.com/problems/primepath
+ */
 public class PrimePath {
     private static final int IMPOSSIBLE = -1;
     private static final Integer[] PRIMES = {
