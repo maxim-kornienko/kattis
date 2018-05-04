@@ -1,10 +1,7 @@
 import sys
 
-def main():
-    """"
-    https://open.kattis.com/problems/pot
-    :returns: None
-    """
+
+def main() -> None:
     result = 0
 
     n = int(sys.stdin.readline())
@@ -13,8 +10,9 @@ def main():
         number = p // 10
         power = p % 10
         result += pow(number, power)
-
     print(result)
 
-if  __name__ =='__main__':main()
 
+if __name__ == '__main__':
+    # https://open.kattis.com/problems/pot
+    main()
