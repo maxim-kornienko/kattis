@@ -1,10 +1,11 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WhatDoesTheFoxSayTest {
 
@@ -25,6 +26,6 @@ public class WhatDoesTheFoxSayTest {
         ByteArrayInputStream input = new ByteArrayInputStream(INPUT.getBytes());
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         WhatDoesTheFoxSay.main(input, new PrintStream(output));
-        Assert.assertEquals(OUTPUT, new String(output.toByteArray()).trim());
+        assertEquals(OUTPUT, output.toString().trim());
     }
 }

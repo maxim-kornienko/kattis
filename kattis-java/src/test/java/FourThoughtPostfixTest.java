@@ -1,34 +1,25 @@
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-import static org.junit.Assert.assertEquals;
+import java.util.stream.Stream;
 
-@RunWith(Parameterized.class)
-public class FourThoughtPostfixTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    private String infix;
-    private String postfix;
-
-    @Parameterized.Parameters
-    public static Object[][] data() {
-        return new Object[][]{
-                {"2 + 3", "2 3 +"},
-                {"3 - 2", "3 2 -"},
-                {"2 + 3 * 7", "2 3 7 * +"},
-                {"5 * 3 - 4 / 2", "5 3 * 4 2 / -"},
-                {"a + b * c - d", "a b c * + d -"}
-        };
+class FourThoughtPostfixTest {
+    static Stream<Arguments> parameters() {
+        return Stream.of(
+                Arguments.of("2 + 3", "2 3 +"),
+                Arguments.of("3 - 2", "3 2 -"),
+                Arguments.of("2 + 3 * 7", "2 3 7 * +"),
+                Arguments.of("5 * 3 - 4 / 2", "5 3 * 4 2 / -"),
+                Arguments.of("a + b * c - d", "a b c * + d -")
+        );
     }
 
-    public FourThoughtPostfixTest(String input, String output) {
-        this.infix = input;
-        this.postfix = output;
-    }
-
-
-    @Test
-    public void test() {
+    @MethodSource("parameters")
+    @ParameterizedTest
+    void test(String infix, String postfix) {
         String[] result = FourThought.toPostfix(infix.split(" "));
         assertEquals(postfix, FourThought.unsplit(result));
     }
