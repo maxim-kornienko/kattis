@@ -3,6 +3,7 @@ My solutions for open.kattis.com problems
 
 https://open.kattis.com/users/maxim-kornienko
 
+## Editor's pick
 My favorites are:
 * [`RadioCommercials`](kattis-java/src/main/java/RadioCommercials.java) - Kadane's algorithm is powerful, simple and beautiful at the same time.
 * [`MailboxManufacturersProblem`](kattis-java/src/main/java/MailboxManufacturersProblem.java) - Mathematics, recursion, arithmetic progressions!
@@ -11,3 +12,7 @@ My favorites are:
 * [`Game2048`](kattis-java/src/main/java/Game2048.java) - saying there is game development in my github. 
 * [`Fire`](kattis-java/src/main/java/Fire.java) - BFS with complications
 * [`Androids`](kattis-java/src/main/java/Androids.java) - Minimum spanning tree with complications
+
+## 2D
+* [Joint Jog Jam](kattis-go/jointjogjam/jointjogjam.go)
+* [Polygon Area](kattis-go/polygonarea/polygonarea.go) - Shoelace formula 
