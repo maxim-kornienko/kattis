@@ -15,4 +15,5 @@ My favorites are:
 
 ## 2D
 * [Joint Jog Jam](kattis-go/jointjogjam/jointjogjam.go)
+* [Goat Rope](kattis-go/goatrope/goatrope.go) - Shortest distance between a point and a box 
 * [Polygon Area](kattis-go/polygonarea/polygonarea.go) - Shoelace formula 
