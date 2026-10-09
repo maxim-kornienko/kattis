@@ -1,5 +1,5 @@
 # kattis
-My solutions for open.kattis.com problems
+My solutions for [open.kattis.com](https://open.kattis.com) problems
 
 https://open.kattis.com/users/maxim-kornienko
 
@@ -13,7 +13,12 @@ My favorites are:
 * [`Fire`](kattis-java/src/main/java/Fire.java) - BFS with complications
 * [`Androids`](kattis-java/src/main/java/Androids.java) - Minimum spanning tree with complications
 
-## 2D
-* [Joint Jog Jam](kattis-go/jointjogjam/jointjogjam.go)
-* [Goat Rope](kattis-go/goatrope/goatrope.go) - Shortest distance between a point and a box 
-* [Polygon Area](kattis-go/polygonarea/polygonarea.go) - Shoelace formula 
+## By Topic
+### 2D
+* [`Joint Jog Jam`](kattis-go/jointjogjam/jointjogjam.go)
+* [`Goat Rope`](kattis-go/goatrope/goatrope.go) - Shortest distance between a point and a box 
+* [`Polygon Area`](kattis-go/polygonarea/polygonarea.go) - Shoelace formula 
+
+### Union find
+* [`UnionFind`](kattis-java/src/main/java/UnionFind.java)
+* [`Islands`](kattis-go/islands3/islands3.go)
