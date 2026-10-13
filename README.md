@@ -22,3 +22,6 @@ My favorites are:
 ### Union find
 * [`UnionFind`](kattis-java/src/main/java/UnionFind.java)
 * [`Islands`](kattis-go/islands3/islands3.go)
+
+### Linear Programming
+* [`Goat Ropes`](kattis-go/goatropes/goatropes.go)
